@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,600,700,900');
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: #eeeeee;
+	color:  #303030;
+	font-family: 'Raleway', sans-serif;
+	width: 1198px;
+	margin: auto;
+}
+
+
+
+/* Layout */
+.ba-container{
+	padding-left: 20px;
+	padding-right: 20px;
+	max-width: 1200px;
+}
+
+
+
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	font-size: inherit;
+	text-decoration: none;
+	background: none;
+	outline: none;
+	border: 0;
+
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+	display: inline-block;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover{
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	outline: none;
+	border: none;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+	outline: none;
+	border: none;
+}
+textarea {
+
+}
+.ba-link{
+	font-family: Roboto, sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 24px;
+	color:  #303030;
+
+}
+.ba-link:hover{
+	color:  #e10011;
+}
+.ba-link--more{
+	color:  #e10011;
+	font-size: 24px;
+	font-weight: 700;
+}
+.ba-title-article{
+	font-size: 48px;
+	font-weight: 900;
+}
+.ba-text-article{
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 24px;
+	margin-top: 12px;
+}
+.ba-header{
+	background: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%,rgba(238,238,238,0) 60%) no-repeat;
+	background-size: 850px  850px;
+	background-position: 400px -100px;
+}
+.ba-header_navbar--center{
+	display: inline-block;
+	vertical-align: middle;
+}
+.ba-header_serf{
+	float: right;
+	padding: 50px 0;
+}
+.ba-link__header{
+	margin-left: 30px;
+}
+.ba-link__header:nth-of-type(2){
+	margin-left: 45px;
+}
+.ba-slider__product-image{
+	height: 491px;
+}
+.ba-slider__description{
+	width: 615px;
+	float: left;
+	margin-right: 105px;
+	text-align: right;
+	font-size: 24px;
+}
+.ba-slider__description-title{
+	font-size: 155px;
+	font-weight: 900;
+	line-height: 150px;
+	text-transform: uppercase;
+	margin: 0;
+}
+.ba-slider__description-text{
+	font-family: Roboto, sans-serif;
+	font-weight: 300;
+	line-height: 36px;
+	padding-left: 45px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+.ba-slider__bullet{
+	text-align: center;
+	margin-bottom: 103px;
+	margin-top: 71px;
+}
+.ba-bullet{
+	display: inline-block;
+	border-radius: 50%;
+	background-color: #303030;
+	width: 11px;
+	height: 11px;
+	margin-right: 9px;
+}
+.ba-bullet--active,
+.ba-bullet:hover{
+	background-color:  #e10011;
+	position: relative;
+}
+.ba-shop{
+	border-radius: 5px;
+	background-color:  #ffffff;
+}
+.ba-shop_article{
+	padding-top: 110px;
+	text-align: center;
+	width: 551px;
+	margin: auto;
+}
+.ba-shop_article-underline{
+	margin-top: 12px;
+}
+.ba-shop_gallery{
+	padding: 71px;
+	overflow: auto;
+}
+.ba-shop_gallery-item{
+	background-color: #eeeeee;
+	border-radius: 5px;
+	float: left;
+	width: 31.12%;
+	height: 387px;
+	position: relative;
+	overflow: hidden;
+}
+.ba-shop_gallery-item:first-of-type{
+	background: url("../asset/speaker-white.png") #eeeeee no-repeat;
+	background-position: -105px -71px;
+	width: 65.56%;
+	margin-right: 3.32%;
+	margin-bottom: 3.32%;
+}
+.ba-shop_gallery-item:nth-of-type(2){
+	background: url("../asset/headphones-red.png") #eeeeee no-repeat;
+	background-size:  479px 502px;
+	background-position: -35px -97px;
+	margin-bottom: 3.32%;
+}
+.ba-shop_gallery-item:nth-of-type(3){
+	background: url("../asset/fit-bit.jpg") #eeeeee no-repeat;
+	background-blend-mode: multiply;
+	background-position: 14px 36px;
+}
+.ba-shop_gallery-item:nth-of-type(4){
+	background: url("../asset/Shoes-For-Men-2.jpg") no-repeat;
+	margin: 0 3.32%;
+	background-position: -350px -31px;
+}
+.ba-shop_gallery-item:last-of-type{
+	background: url("../asset/chair.jpg") no-repeat;
+	background-size:  590px 415px;
+	background-position: center bottom;
+}
+.ba-shop_gallery-item--opacity{
+	background-color: #e10011;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	font-family: Roboto, sans-serif;
+	color:  #ffffff;
+	font-size: 30px;
+	font-weight: 900;
+	visibility: hidden;
+}
+.ba-shop_gallery-item:hover .ba-shop_gallery-item--opacity{
+	visibility: visible;
+}
+.ba-shop_gallery-sing{
+	margin: 37px;
+	width: 250px;
+	position: absolute;
+	left: 0;
+	bottom: 13px;
+}
+.ba-shop_gallery-sing span{
+	border-bottom: 4px solid #ffffff;
+	padding-bottom: 8px;
+}
+.ba-footer{
+	text-align: center;
+
+}
+.ba-footer__form-title{
+	padding-top: 90px;
+	padding-bottom: 45px;
+	width: 551px;
+	margin: auto;
+}
+.ba-footer__social{
+	margin-top: 112px;
+}
+.ba-footer__social-icons{
+	display: inline-block;
+	border-radius: 50%;
+	background-color:  #ffffff;
+	width: 70px;
+	height: 70px;
+	position: relative;
+	margin:0 10px;
+}
+.ba-footer__social-icons:hover{
+	background-color: #e10011;
+}
+.ba-footer__link{
+	width: 70px;
+	height: 70px;
+	display: block;
+}
+.ba-footer__social-icons img{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+}
+.ba-footer__copyright{
+	color:  #979797;
+	padding: 65px 0 30px 0 ;
+}
+.ba-footer__copyright--linked{
+	font-family: 'Raleway', sans-serif;
+}
+.ba-footer__form{
+	position: relative;
+	width: 702px;
+	height: 70px;
+	margin: auto;
+}
+.ba-footer__form-email{
+	padding: 25px 0 25px  70px;
+	background: url("../asset/icon-mail.png") #ffffff no-repeat;
+	background-position: 35px 27px;
+	border-radius: 35px 0 0 35px;
+	position: absolute;
+	left: 0;
+}
+.ba-footer__email--decoration{
+	width: 500px;
+}
+.ba-footer__email--decoration::-webkit-input-placeholder {
+	font-style: italic;
+}
+.ba-footer__form-button{
+	background-color: #e10011;
+	width: 210px;
+	padding: 25px 0;
+	border-radius:0 35px 35px 0;
+	position: absolute;
+	right: 0;
+}
+.ba-footer__form-button--decoration{
+	font-family: Roboto,sans-serif;
+	color:  #ffffff;
+	font-size: 18px;
+	font-weight: 900;
+	text-transform: uppercase;
+	margin: 0;
+}
+.ba-footer__form-button:after{
+	border: 6px solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	border-left-color: #ffffff;
+	z-index: 8;
+	margin: 3px;
+}
